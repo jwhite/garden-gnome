@@ -69,7 +69,7 @@
           <span 
             v-for="companion in plant.companionPlants.slice(0, 3)"
             :key="companion"
-            class="inline-block px-2 py-1 bg-green-50 text-green-700 text-xs rounded"
+            class="inline-block px-2 py-1 bg-emerald-50 text-emerald-700 text-xs rounded"
           >
             {{ companion }}
           </span>
@@ -188,11 +188,11 @@ function formatSunRequirement(requirement: string): string {
 function getDifficultyBadgeClass(difficulty: string): string {
   switch (difficulty) {
     case 'beginner':
-      return 'bg-green-100 text-green-800';
+      return 'bg-emerald-100 text-emerald-800';
     case 'intermediate':
-      return 'bg-yellow-100 text-yellow-800';
+      return 'bg-amber-100 text-amber-800';
     case 'advanced':
-      return 'bg-red-100 text-red-800';
+      return 'bg-rose-100 text-rose-800';
     default:
       return 'bg-gray-100 text-gray-800';
   }
